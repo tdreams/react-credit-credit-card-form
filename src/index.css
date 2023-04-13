@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(75, 63, 63);
+}
+
+body {
+  background: linear-gradient(120deg, rgba(211, 204, 235), rgb(138, 127, 184));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 540px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 5px 6px 8px 3px rgba(0, 0, 0, 0.25);
+}
+form {
+  width: 476px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .input-container {
+  width: 476px;
+  margin: 10px 0;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  border: 1px solid rgba(226, 226, 226, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 11px 0;
+  font-size: 18px;
+}
+
+form input[type="submit"] {
+  width: 476px;
+  background: #5788e7;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+form input[type="submit"]:active {
+  background-color: #335fb5;
+}
+
+form input[type="month"] {
+  width: 286px;
+}
+
+form input#cvv {
+  width: 120px;
+}
+
+label {
+  color: #a4a4a4;
+}
+
+form .supporting-inputs-container {
+  width: 476px;
+  display: flex;
+  justify-content: space-between;
+  margin: 11px 0;
+}
+
+.info-message {
+  width: 100%;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.credit-card {
+  width: 500px;
+  height: 299px;
+  filter: drop-shadow(6px 7px 7px rgba(0, 0, 0, 0.25));
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  bottom: 80px;
+  overflow: hidden;
+}
+
+.credit-card .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card .card-detail-conatiner {
+  padding: 28px;
+  width: 89%;
+}
+
+.credit-card .detail-container {
+  height: 55px;
+}
+
+.card-detail-conatiner .detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.credit-card .bottom-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  align-items: last baseline;
+  text-align: left;
+}
+
+.credit-card .number-display {
+  width: 304px;
+  height: 29px;
+  font-size: 25px;
+  display: flex;
+  margin-top: 35px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card h2,
+.credit-card p {
+  color: rgba(0, 0, 0, 1);
+  margin: 5px;
+}
+
+.credit-card .rigth-circle {
+  position: absolute;
+  width: 350.5px;
+  height: 352.05px;
+  border-radius: 50%;
+  left: 209.19px;
+  top: -150px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+
+  background-color: #e8e5e5;
+}
+
+.credit-card .left-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  left: -58.19px;
+  top: 120px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+  background: #ffd9fd;
+}
+
+.credit-card #cvv-display {
+  background-color: #d9d9d9;
+  position: absolute;
+  font-size: 24px;
+  width: 267px;
+  height: 42px;
+  left: 14px;
+  top: 130px;
+  text-align: right;
+}
+
+#cvv-display p {
+  margin-right: 10px;
+}
+
+.bar {
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  left: 0;
+  top: 15px;
+
+  background: #d9d9d9;
+}
+.touch-logo {
+  position: absolute;
+  width: 23.81px;
+  height: 29px;
+  right: 15px;
+  top: 90px;
+}
+
+.method1-hide,
+.method-hide {
+  display: none;
+}
+.chip-icon {
+  margin: 10px 0px 0 9px;
+}
+
+.method1-mastercard {
+  display: none;
+}
+
+.method-visa {
+  display: none;
+}
+
+.flip {
+  perspective: 55rem;
+  animation: 0.29s linear flipping;
+  transform-style: preserve-3d
+}
+
+.null {
+  perspective: 55rem;
+  animation: 0.29s linear forwards flippings;
+  transform-style: preserve-3d
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes flippings {
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+}
