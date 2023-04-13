@@ -6,7 +6,11 @@ React Credit Card Form is a customizable and easy-to-use credit card form compon
 #Features
 
 • Responsive design that adapts to any screen size
+
 • Multiple credit card types supported, including Visa, Mastercard, American Express, Discover, and more
+
 • Real-time validation and feedback for credit card number, expiration date, CVV, and ZIP code
+
 • Customizable styling and theming to match your brand's look and feel
+
 • Seamless integration with other React components and libraries
